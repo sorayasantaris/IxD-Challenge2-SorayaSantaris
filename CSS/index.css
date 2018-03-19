@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+	color: white;
+  margin:0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family:'Open Sans Condensed', sans-serif;
+
+}
+
+.block{
+	display: block;
+	padding: 0;
+	text-align: center;
+	margin-bottom: $gutter;
+}
+
+#messageText{
+  border-style: double;
+  border-color: white;
+  background-color: black;
+  padding: 10px;
+  font-size: 40px;
+}
+
+#time{
+  font-size: 40px;
+  text-align: center;
+  font-weight:bold;
+}
+
+.grid{
+  padding: 35px;
+	width: 100%;
+	max-width: 4000px;
+	margin: 0 auto;
+}
+
+.gutter{
+	margin-left: ($gutter / 2);
+	margin-right: ($gutter / 2);
+}
+
+.col-33{
+	width: 33.3%;
+	float: center;
+}
+
+.clear{
+	clear: both;
+	display: block;
+  padding: 100px
+}
+
+
+@media all and (max-width:800px) {
+	.col-33{
+		width: 50%;
+	}
+}
+
+@media all and (max-width:600px) {
+	.col-50, .col-33{
+		width: 100%;
+		float: none;
+	}
+}
